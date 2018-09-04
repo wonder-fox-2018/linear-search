@@ -4,7 +4,9 @@
 console.log("Linear Search")
 let linearSearch = (target, values) => {
   for (let i = 0; i < values.length; i++) {
-    if (values[i] === target) return i
+    if (values[i] === target) {
+      return i
+    } 
   }
   return -1
 }
@@ -21,7 +23,9 @@ console.log("Global Linear Search")
 let globalLinearSearch = (target, values) => {
   var outputArr = [];
     for (let i = 0; i < values.length; i++) {
-      if (values[i] === target) outputArr.push(i)
+      if (values[i] === target) {
+        outputArr.push(i)
+      }
     }
   return outputArr
 }
